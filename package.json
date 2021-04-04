@@ -1,0 +1,19 @@
+{
+  "name": "hotel-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheussss1/Hotel-web-app--front-end-.git"
+  },
+  "author": "Matheus Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheussss1/Hotel-web-app--front-end-/issues"
+  },
+  "homepage": "https://github.com/matheussss1/Hotel-web-app--front-end-#readme"
+}
