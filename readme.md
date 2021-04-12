@@ -8,4 +8,4 @@
 
 # Site overview:
 
-![Teste](https://https://github.com/matheussss1/Hotel-app-Front-End/blob/master/img/readmeImg/site.PNG?raw=true)
+![](https://github.com/matheussss1/Hotel-app-Front-End/blob/master/img/readmeImg/site.PNG?raw=true)
