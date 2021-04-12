@@ -1,4 +1,19 @@
 ///////////////////////////////////////////////////////
+//animations
+@keyframes pulsate{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+        box-shadow: var(--shadow-dark);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+///////////////////////////////////////////////////////
 //LOGO
 .logo {
     height: 4rem;
@@ -269,6 +284,10 @@
     background-color: transparent;
     transition: all .2s;
 
+    & span {
+        margin-left: 3px;
+    }
+
     &:hover{
         color: var(--color-grey-dark-1);
     }
@@ -347,5 +366,127 @@
         &:not(:last-child){
             margin-right: -2rem;
         }
+    }
+}
+//////////////////////////////////////////////////////////
+// REVIEWS
+.review{
+    background-color: white;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content: '\201C';
+        position: absolute;
+        top: -2rem;
+        left: 0rem;
+        z-index: 1;
+        line-height: 1;
+        font-size: 20rem;
+        font-family: sans-serif;
+        color: var(--color-grey-light-2);    
+    }
+
+    &__text{
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__photo{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    &__user-box{
+        margin-right: auto;
+    }
+
+    &__user-name{
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: .4rem;
+    }
+
+    &__user-date{
+        font-size: 1rem;
+        color: var(--color-grey-dark-3);
+    }
+
+    &__rating{
+        color: var(--color-primary);
+        font-size: 2.2rem;
+    }
+}
+//////////////////////////////////////////////////////////
+// CALL TO ACTION
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 2.5rem;
+
+    }
+}
+
+.btn{
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100rem;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &__visible{
+        display: inline-block;
+        padding: 2rem 7.5rem;
+        width: 100%;
+        height: 100%;
+        transition: all .5s;
+    }
+
+    &__invisible{
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 2rem 0;
+        transition: all .5s;
+    }
+
+    &:hover{
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+
+    animation: pulsate 1s infinite;
+    }
+
+    &:hover &__visible{
+        transform: translateY(100%);
+    }
+    
+    &:hover &__invisible{
+        top: 0;
     }
 }
