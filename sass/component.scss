@@ -137,7 +137,7 @@
         background-color: var(--color-primary);
         transform: scaleY(0);
         transition: transform .2s,
-                    width .4s cubic-bezier(1,0,0,1) .2s
+                    width .4s cubic-bezier(1,0,0,1) .2s,
                     background-color .2s;
     }
     
@@ -154,10 +154,11 @@
     &__link,
     &__link:visited,
     &__link:link{
+        text-transform: uppercase;
         text-decoration: none;
         color: var(--color-grey-light-1);
         display: block;
-        padding: 1.5rem 3rem;
+        padding: 1.5rem;
         position: relative;
 
         display: flex;
@@ -181,4 +182,55 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--color-grey-dark-3);
+}
+///////////////////////////////////////////////////////
+//GALLERY
+
+.gallery{
+    display: flex;
+    
+    &__photo{
+        width: 100%;
+        display: block;
+    }
+}
+
+///////////////////////////////////////////////////////
+//HOTEL OVERVIEW
+.overview{
+    display: flex;
+    align-items: center;
+
+    &__heading{
+        
+    }
+
+    &__stars{
+        color: yellow;
+        flex: 1;
+    }
+
+    &__icon-star,
+    &__icon-location{
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location{
+        
+    }
+
+
+    &__rating{
+
+    }
+    
+    &__rating-average{
+
+    }
+
+    &__rating-count{
+
+    }
 }
