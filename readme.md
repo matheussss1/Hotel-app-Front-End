@@ -3,5 +3,5 @@
 ## Para desenvolver em cima desse projeto:
 
 - npm install -g sass
-### And then
+### E depois: 
 - npm run compile-sass
