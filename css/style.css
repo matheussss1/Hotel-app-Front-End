@@ -152,12 +152,25 @@ body {
   list-style: none;
   margin-top: 3.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
 .side-nav__item {
   position: relative;
   transition: all 0.5s;
 }
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .side-nav__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .side-nav__item::before {
   content: "";
@@ -200,6 +213,11 @@ body {
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-dark-3);
+}
+@media only screen and (max-width: 56.25em) {
+  .legal {
+    display: none;
+  }
 }
 
 .gallery {
@@ -484,6 +502,11 @@ body {
   background-color: var(--color-grey-light-3);
   border-bottom: var(--line);
 }
+@media only screen and (max-width: 56.25em) {
+  .detail {
+    padding: 2rem;
+  }
+}
 
 .description {
   background-color: white;
@@ -491,6 +514,11 @@ body {
   flex: 0 0 60%;
   padding: 3rem;
   margin-right: 4.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .description {
+    padding: 1rem;
+  }
 }
 
 .user-reviews {
