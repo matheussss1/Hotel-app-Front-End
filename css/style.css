@@ -33,6 +33,11 @@ html {
   font-weight: 400;
   line-height: 1.6;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
@@ -433,6 +438,12 @@ body {
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
 }
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+  }
+}
 
 .header {
   font-size: 1.4rem;
@@ -446,6 +457,11 @@ body {
 
 .content {
   display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
