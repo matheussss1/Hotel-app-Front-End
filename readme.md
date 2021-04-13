@@ -2,7 +2,7 @@
 
 # Site overview:
 
-![](https://github.com/matheussss1/Hotel-app-Front-End/blob/master/img/readmeImg/site.PNG?raw=true)
+![](https://github.com/matheussss1/Hotel-app-Front-End/blob/master/img/readmeImg/gif.gif?raw=true)
 
 ## Esse projeto Front-end faz parte do curso de [SASS na udemy](https://www.udemy.com/course/advanced-css-and-sass/).
 
