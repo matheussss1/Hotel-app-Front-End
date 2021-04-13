@@ -21,6 +21,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smallest){
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 12rem;
+    }
 }
 
 .content{
@@ -61,6 +67,10 @@
     @media only screen and (max-width: $bp-medium){
         padding: 2rem;
     }
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+    }
 }
 .description{
     background-color: white;
@@ -70,7 +80,12 @@
     margin-right: 4.5rem;
 
     @media only screen and (max-width: $bp-medium){
-        padding: 1rem;
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        margin-bottom: 1rem;
+        width: 100%;
     }
 }
 .user-reviews{
