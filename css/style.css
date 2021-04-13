@@ -366,11 +366,17 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.2rem;
-  background-color: var(--color-primary);
-  -webkit-mask-image: url(../img/chevron-thin-right.svg);
-  -webkit-mask-size: cover;
-  mask-image: url(../img/chevron-thin-right.svg);
-  mask-size: cover;
+  background-image: url(../img/chevron-thin-right.svg);
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) {
+  .list__item::before {
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size: cover;
+  }
 }
 
 .recommend {
